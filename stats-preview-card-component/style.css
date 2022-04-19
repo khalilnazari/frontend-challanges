@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;400;500;600;700;800;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Lexend Deca', sans-serif;;
+}
+
+body {
+    background-color: #0a0c1b;
+}
+
+/* layout */
+.container {
+    max-width: 1100px;
+    width: 80%;
+    margin: 100px auto;
+}
+
+
+/* card */
+.card {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #1c1938;
+}
+
+
+/* card text */
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+    width: 50%;
+    color: #f9fafbff;
+}
+
+.text h3 {
+    font-size: 1.5em;;
+}
+
+.text h3 span {
+    color: #8549afff;
+}
+
+.text .description {
+    margin-bottom: 25px;
+    color:#9d9bb1ff;
+}
+
+.analytics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.17em;
+}
+
+.analytics .term {
+    color:#9d9bb1ff;
+}
+ 
+.analytics .count {
+    font-weight: bold;
+}
+
+
+/* card photo */
+.image {
+    width: 50%;
+}
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* for smaller devices */
+@media screen and (max-width:1000px){
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text {
+        order: 1;
+        display: block;
+        width: 100%;
+    }
+
+    .text .description {
+        margin: 40px 0;
+    }
+
+    .analytics {
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .analytics > div {
+        width: 100%;
+    }
+
+    .image { 
+        width: 100%;
+    }
+}
