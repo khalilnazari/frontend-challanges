@@ -1,0 +1,137 @@
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* general styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background:hsl(216, 12%, 8%); 
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+/* container */
+.container {
+    width: 360px;
+    height: 400px;
+    display: grid;
+}
+
+/* card  */
+.card-form, .card-result {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 30px;
+    padding: 30px 20px;
+}
+
+.card-result  {
+    text-align: center;
+    display: none;
+}
+.result-text {
+    color: orange;
+    background: #393939;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 20px;
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+/* card header */
+.card-header {
+    color: white;   
+}
+
+/* card header img */
+.card-header img {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    background-color: hsl(215, 13%, 25%);;
+}
+
+/* card text */
+.card-text {
+    color: white;
+    margin: 30px 0;
+}
+
+/* card text h2 */
+.card-text h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/* card text p */
+.card-text p {
+    color: hsl(217, 12%, 63%);
+    margin-top: 10px;    
+    line-height: 25px;
+}
+
+/* card options */
+.card-options {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 0;
+}
+
+/* card options label */
+.option-label {
+    background-color: hsl(215, 13%, 25%);
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* card options label hover effect*/
+.option-label:hover {
+    background: hsl(215, 7%, 46%);
+}
+
+/* card option checked */
+.option-item input:checked + .option-label {
+    background-color: orange;
+}
+
+
+/* submit button */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* submit button hover effect */
+.submit-btn:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: orange;
+}

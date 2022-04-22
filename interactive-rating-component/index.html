@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+  <!-- style  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Interactive rating component</title>
+</head>
+<body>
+  <!-- container -->
+  <div class="container">
+    <!-- card -->
+    <div class="card-form">
+      <!-- card header -->
+      <div class="card-header">
+        <img src="./images/icon-star.svg" alt="">
+      </div>
+      <!-- card header end -->
+
+      <!-- card text -->
+      <div class="card-text">
+        <h2>How did we do?</h2>
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+      </div>
+      <!-- card text end -->
+
+      <!-- form -->
+      <form action="" class="form">
+          <!-- card options -->
+          <div class="card-options">
+            <div class="option-item">
+              <input type="radio" name="vote" id="vote-option-1" hidden>
+              <label for="vote-option-1" class="option-label">1</label>
+            </div>
+  
+            <div class="option-item">
+              <input type="radio" name="vote" id="vote-option-2" hidden>
+              <label for="vote-option-2" class="option-label">2</label>
+            </div>
+  
+            <div class="option-item">
+              <input type="radio" name="vote" id="vote-option-3" hidden>
+              <label for="vote-option-3" class="option-label">3</label>
+            </div>
+  
+            <div class="option-item">
+              <input type="radio" name="vote" id="vote-option-4" hidden>
+              <label for="vote-option-4" class="option-label">4</label>
+            </div>
+  
+            <div class="option-item">
+              <input type="radio" name="vote" id="vote-option-5" hidden>
+              <label for="vote-option-5" class="option-label">5</label>
+            </div>
+          </div>
+           <!-- card options end -->
+
+          <!-- submit button -->
+          <button type="submit" class="submit-btn">Submit</button>
+      </form>
+      <!-- form end -->
+    </div>
+
+    <div class="card-result">
+      <img src="./images/illustration-thank-you.svg" alt="">
+
+      <p class="result-text">You selected 5 out 5</p>
+      <div class="card-text">
+        <h2>Thank you</h2>
+        <p>We appreciate you taking the time to gave a rating. If you ever need more support, do not hesitate to get in touch!</p>
+      </div>
+    </div>
+  </div>
+  <!-- container end -->
+
+  <!-- script for submition -->
+  <script>
+    const cardForm = document.querySelector('.card-form')
+    const cardResult = document.querySelector('.card-result')
+    const submitBtn = document.querySelector('.submit-btn')
+
+    submitBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      // when submiting form
+      cardForm.style.display = "none"; 
+      cardResult.style.display = "block"; 
+      
+    })
+    
+  </script>
+</body>
+</html>
