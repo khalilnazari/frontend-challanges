@@ -31,31 +31,31 @@
       <!-- card text end -->
 
       <!-- form -->
-      <form action="" method="post" class="form">
+      <form method="post" id="vote-form">
           <!-- card options -->
           <div class="card-options">
             <div class="option-item">
-              <input type="radio" name="vote" id="vote-option-1" required="required" hidden>
+              <input value="1" type="radio" name="vote" id="vote-option-1" required="required" hidden>
               <label for="vote-option-1" class="option-label">1</label>
             </div>
   
             <div class="option-item">
-              <input type="radio" name="vote" id="vote-option-2" required="required" hidden>
+              <input value="2" type="radio" name="vote" id="vote-option-2" required="required" hidden>
               <label for="vote-option-2" class="option-label">2</label>
             </div>
   
             <div class="option-item">
-              <input type="radio" name="vote" id="vote-option-3" required="required" hidden>
+              <input value="3" type="radio" name="vote" id="vote-option-3" required="required" hidden>
               <label for="vote-option-3" class="option-label">3</label>
             </div>
   
             <div class="option-item">
-              <input type="radio" name="vote" id="vote-option-4" required="required" hidden>
+              <input value="4" type="radio" name="vote" id="vote-option-4" required="required" hidden>
               <label for="vote-option-4" class="option-label">4</label>
             </div>
   
             <div class="option-item">
-              <input type="radio" name="vote" id="vote-option-5" required="required" hidden>
+              <input value="5" type="radio" name="vote" id="vote-option-5" required="required" hidden>
               <label for="vote-option-5" class="option-label">5</label>
             </div>
           </div>
@@ -70,7 +70,7 @@
     <div class="card-result">
       <img src="./images/illustration-thank-you.svg" alt="">
 
-      <p class="result-text">You selected 5 out 5</p>
+      <p class="result-text">You selected <span id="show-vote"></span> out 5</p>
       <div class="card-text">
         <h2>Thank you</h2>
         <p>We appreciate you taking the time to gave a rating. If you ever need more support, do not hesitate to get in touch!</p>
@@ -79,21 +79,7 @@
   </div>
   <!-- container end -->
 
-  <!-- script for submition -->
-  <script>
-    const cardForm = document.querySelector('.card-form')
-    const cardResult = document.querySelector('.card-result')
-    const submitBtn = document.querySelector('.submit-btn')
-
-    submitBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-
-      // when submiting form
-      cardForm.style.display = "none"; 
-      cardResult.style.display = "block"; 
-      
-    })
-    
-  </script>
+  <!-- script -->
+  <script src="./app.js"></script>
 </body>
 </html>

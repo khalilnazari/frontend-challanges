@@ -34,9 +34,17 @@ body {
     padding: 30px 20px;
 }
 
+.card-form.hide {
+    display: none;
+}
+
 .card-result  {
     text-align: center;
     display: none;
+}
+
+.card-result.show {
+    display: block;
 }
 .result-text {
     color: orange;
@@ -61,7 +69,7 @@ body {
     border-radius: 50%;
     display: grid;
     place-content: center;
-    background-color: hsl(215, 13%, 25%);;
+    background-color: hsl(215, 13%, 25%);
 }
 
 /* card text */
