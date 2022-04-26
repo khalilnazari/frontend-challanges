@@ -1,0 +1,136 @@
+/* fontt */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+:root {
+    --dark-cyan: hsl(185, 75%, 39%); 
+    --dark-blue: hsl(229, 23%, 23%); 
+    --dark-gray-blue: hsl(227, 10%, 46%); 
+    --dark-gray: hsl(0, 0%, 59%);
+    --line: hsl(0deg 0% 90%);
+    --font-size: 1.125rem;
+    --font-bold:400;
+    --font-bolder:700;
+    --border-radius: 15px;
+}
+
+/* html */
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* body style */
+body {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-cyan);
+    position: relative;
+    overflow: hidden;
+}
+
+/* body before */
+body::before {
+    content: url('./images/bg-pattern-top.svg');
+    position: absolute;
+    left: -10%;
+    top: -50%;
+    height: 400px;
+    width: 400px; 
+    z-index: -1;
+}
+
+/* body after */
+body::after {
+    content: url(./images/bg-pattern-bottom.svg);
+    position: absolute;
+    right: 30%;
+    bottom: 0;
+    height: 400px;
+    width: 400px; 
+    z-index: -1;
+}
+
+/* container */
+.container {
+    max-width: 22rem;
+    margin: 0 auto;
+}
+
+/* .profile-card */
+.profile-card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.212);
+    z-index: 1111;
+}
+
+.profile-card .profile-card__header {
+    text-align: center;
+}
+
+.profile-card .header-image {
+    width: 100%;
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+}
+
+.profile-card .profile-avatar {
+    border: .3rem solid #fff;
+    border-radius: 50%;
+    margin-top: -15% ;
+}
+
+/* body */
+.profile-card .profile-card__body {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.profile-card .name {
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.profile-card .age {
+    color: var(--dark-gray);
+}
+
+.profile-card .location {
+    color: var(--dark-gray);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* footer */
+.profile-card .profile-card__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 20px;
+    border-top: 1px solid var(--line);
+    text-align: center;
+}
+
+.profile-card .count {
+    font-weight: 700;
+    font-size: 1.22rem;
+    color: var(--dark-blue);
+    margin-bottom: 0.25rem;
+}
+
+.profile-card .term {
+    color: var(--dark-gray);
+    font-weight: 700;
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
