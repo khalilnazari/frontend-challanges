@@ -10,6 +10,7 @@
     --dark-blue: hsl(218, 44%, 22%);
 }
 
+/* general style */
 * {
     padding: 0;
     margin: 0;
@@ -27,39 +28,41 @@ body {
     background: var(--light-gray);
 }
 
+/* container */
 .container {
     max-width: 375px;
 }
 
+/* card */
 .card {
     background-color: var(--white);
     padding: .8rem;
     border-radius: 1rem;
 }
 
-.card__header {
 
-}
-
-.card__image {
+/* card image */
+.card .card__image {
     width: 100%;
     border-radius: 1rem;
 }
 
-.card__body {
+/* card body */
+.card .card__body {
     padding: 1rem 1.5rem;
 }
 
-.card__title {
+/* title */
+.card .card__title {
     text-align: center;
     font-size: 1.5rem;
     color: var(--dark-blue);
     margin-bottom: 1.3rem;
 }
 
+/* description */
 .card__decription {
     text-align: center;
     font-size: 1.2rem;
     color: var(--grayish-blue);
-    /* margin-bottom: 1.4rem; */
 }
