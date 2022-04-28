@@ -30,7 +30,7 @@ body {
 
 /* container */
 .container {
-    max-width: 375px;
+    max-width: 300px;
 }
 
 /* card */
@@ -55,7 +55,7 @@ body {
 /* title */
 .card .card__title {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.24rem;
     color: var(--dark-blue);
     margin-bottom: 1.3rem;
 }
@@ -63,6 +63,6 @@ body {
 /* description */
 .card__decription {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--grayish-blue);
 }
