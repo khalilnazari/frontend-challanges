@@ -50,11 +50,11 @@ body {
 /* card body */
 .card .card__body {
     padding: 1rem 1.5rem;
+    text-align: center;
 }
 
 /* title */
 .card .card__title {
-    text-align: center;
     font-size: 1.24rem;
     color: var(--dark-blue);
     margin-bottom: 1.3rem;
@@ -62,7 +62,6 @@ body {
 
 /* description */
 .card__decription {
-    text-align: center;
     font-size: 1rem;
     color: var(--grayish-blue);
 }

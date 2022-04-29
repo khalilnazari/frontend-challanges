@@ -1,0 +1,124 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+
+
+/* variables */
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --primary-font-site: 16px;
+    --font-weight-4: 400; 
+    --font-weight-7:700; 
+}
+
+
+/* general styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Karla', sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--light-gray);
+}
+
+.container {
+    width: 660px;
+}
+
+/* card */
+.card {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.192);
+    background-color: #fff;
+}
+
+/* card header */
+.card__header {
+    padding: 2rem;
+}
+.card__header-title {
+    color: var(--cyan);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.card__header-subtitle {
+    color: var(--bright-yellow);
+    margin: 1.4rem 0;
+    font-weight: 600;
+
+}
+.card__header-description {
+    color: var(--grayish-blue);
+    line-height: 1.7rem;
+}
+
+/* row */
+.card__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--light-gray);
+}
+
+/* left-col */
+.left-col {
+    background-color: var(--cyan);
+    color: var(--light-gray);
+    padding: 2rem;
+}
+
+.left-col .description {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.left-col .price-text {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--light-gray);
+    margin-bottom: .5rem;
+}
+
+.left-col .price-tag {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.left-col .signup-btn {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--bright-yellow);
+    text-align: center;
+    padding: .8rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/* right-col */
+.right-col {
+    background-color: #4abebd;
+    padding: 2rem;
+}
+
+.col-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+
