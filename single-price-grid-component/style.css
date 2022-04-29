@@ -34,13 +34,14 @@ body {
 }
 
 .container {
-    width: 660px;
+    max-width: 660px;
 }
 
 /* card */
 .card {
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.192);
     background-color: #fff;
+    border-radius: 0.3rem;
 }
 
 /* card header */
@@ -106,6 +107,7 @@ body {
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 600;
+    box-shadow: 0 0 10px #00000012;
 }
 
 
@@ -122,3 +124,13 @@ body {
 }
 
 
+@media (max-width:550px){
+    .container {
+        width: 98%;
+    }
+
+    .card__row {
+        display: block;
+    }
+    
+}
