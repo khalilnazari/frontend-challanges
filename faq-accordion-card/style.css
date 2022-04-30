@@ -1,0 +1,137 @@
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* variables */
+:root {
+    --very-dark-desaturated-lue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-size: 12px; 
+    background-color: var(--soft-violet);
+    background: linear-gradient(to bottom, var(--soft-violet), var(--soft-blue));
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ */
+}
+
+
+.container {
+    max-width: 800px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+
+.faq-card {
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0 0 25px #00000040;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* card image */
+.faq-card .faq-card__image {
+    background-image: url('./images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2rem 2rem;
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.faq-card .faq-card__img {
+    margin-left: -2rem;
+}
+
+.faq-card .faq-card__text {
+    padding: 2.5rem;
+}
+
+/* title */
+.faq-card .faq-card__title {
+    margin-bottom:1.6rem;
+    text-transform: uppercase;
+}
+
+/* faq item */
+.faq-card .faq-card__item {
+    border-bottom: 2px solid var(--light-grayish-blue);
+    padding:  1rem 0;
+    user-select: none;
+    cursor: pointer;
+    /* margin-bottom: .5rem; */
+    /* background-color: blue; */
+}
+
+/* qeustion */
+.faq-card .faq-card__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+}
+.faq-card .faq-card__question.opened {
+    font-weight: 700;
+    margin-bottom: .6rem;
+}
+
+/* answer */
+.faq-card .answer {
+    display: none;
+}
+.faq-card .answer.show {
+    display: block;
+} 
+
+
+
+/* for smaller devices */
+
+@media screen and (max-width:650px) {
+    .faq-card {
+        display: block;
+    }
+
+    .faq-card .faq-card__image {
+        display: flex;
+        justify-content: center;
+        overflow: visible;
+    }
+
+    .faq-card .faq-card__img {
+        width: 80%;
+        margin-top: -6.7rem;
+        margin-left: 0;
+    }
+
+.faq-card .faq-card__title {
+    text-align: center;
+}
+
+}
