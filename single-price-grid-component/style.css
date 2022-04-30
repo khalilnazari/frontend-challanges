@@ -127,6 +127,7 @@ body {
 @media (max-width:550px){
     .container {
         width: 98%;
+        margin: 0 auto;
     }
 
     .card__row {

@@ -1,0 +1,149 @@
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* variables */
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%); 
+    --very-pale-blue: hsl(225, 100%, 98%); 
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+
+/* general styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--pale-blue);
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+
+.container {
+    max-width: 400px;
+}
+
+.summary-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 20px 46px rgb(0 0 0 / 24%);
+}
+
+
+.summary-card img {
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius:1rem;
+}
+
+
+/* card__content */
+.card__content {
+    padding: 2rem 2.5rem;
+    text-align: center;
+}
+
+
+/* title & description */
+.summary-card .card__title {
+    color: var(--dark-blue);
+    margin-bottom: .8rem;
+}
+
+.summary-card .card__description {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: var(--desaturated-blue);
+}
+
+/* plan */
+.summary-card .content__plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--very-pale-blue);
+    padding: 1.4rem;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.summary-card .plan__price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.summary-card .music-icon {
+    width: 3rem;
+}
+.summary-card .price__label {
+    color: var(--dark-blue);
+    font-weight: 800;
+    font-size: 1.15rem;
+}
+.summary-card .price__count {
+    color: var(--desaturated-blue); 
+    font-weight: 600;
+    font-size: 1rem;
+}
+.summary-card .price__change-link {
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* payment-btn */
+.summary-card .payment-btn {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    color: #fff;
+    background-color: var(--bright-blue);
+    padding: 1.1rem;
+    display: block;
+    text-align: center;
+    border-radius: .8rem;
+    box-shadow: 0 20px 46px rgb(0 0 0 / 24%);
+    margin-bottom: 2rem;
+}
+
+/* cancel btn */
+.summary-card .cancel-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: .8rem;
+    color: var(--desaturated-blue);
+    cursor: pointer;
+}
+
+@media screen and (max-width:400px) {
+    body {
+        background-image: url('./images/pattern-background-mobile.svg');
+    }
+    .container {
+        width: 98%;
+        margin: 0 auto;
+    }
+}
