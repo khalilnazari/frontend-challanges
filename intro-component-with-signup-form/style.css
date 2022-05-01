@@ -1,0 +1,154 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* variables */
+:root {
+    --red: hsl(0, 100%, 74%); 
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%); 
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+/* general style */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--red);
+    background-image: url('./images/bg-intro-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 16px; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 900px;
+    width: 95%;
+    margin: 0 auto; 
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-wrapper .about-form {
+    width: 50%;
+    color: #fff
+}
+.form-wrapper .about-form h1{
+    margin-bottom: 2rem;
+}
+
+
+/* inputs warpper */
+.form-wrapper .inputs-wrapper {
+    width: 50%;
+}
+
+/* plam */
+.form-wrapper .plan {
+    background: var(--blue);
+    padding: 1rem;
+    color: var(--grayish-blue);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px #00000042;
+    margin-bottom: 1rem;
+    font-size: 12px;
+    text-align: center;
+}
+
+.form-wrapper .plan .plan-text {
+    font-weight: 600;
+    color: #fff;
+}
+
+/* form */
+.form-wrapper form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/* inputs */
+.form-wrapper .form-inputs {
+    display: block;
+    width: 100%;
+    margin-bottom:1rem;
+    border: 1px solid var(--grayish-blue);
+    padding: 10px 12px;
+    border-radius: .3rem;
+}
+
+.form-wrapper .form-inputs:focus {
+    outline: 1px solid var(--blue);
+}
+
+.form-wrapper .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background-color: var(--green);
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+
+/* terms */
+.form-wrapper .term-services {
+    margin-top: 2rem;
+    font-size: 10px;
+    text-align: center;
+    color: var(--grayish-blue);
+}
+
+.form-wrapper .term-services a {
+    color: var(--red);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:600px) {
+    body {
+        background-image: url('./images/bg-intro-mobile.png');
+    }
+    .form-wrapper {
+        display: block;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .form-wrapper .about-form {
+        width: 100%;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    .form-wrapper .inputs-wrapper {
+        width: 100%;
+    }
+}
