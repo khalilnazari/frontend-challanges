@@ -101,6 +101,12 @@ body {
     color: var(--desaturated-dark-blue);
 }
 
+
+.card .share {
+    position: relative;
+    margin-left: auto;
+}
+
 .card .share-btn {
     background-color: var(--light-grayish-blue);
     width: 30px;
@@ -112,13 +118,14 @@ body {
     margin-left: auto;
     position: relative;
 }
-.card .share.active {
+.card .share-btn.active {
     background-color: var(--very-dark-grayish-blue);
     color: var(--light-grayish-blue);
 }
-/* .card .share::after {
-    content: url('./images/icon-share.svg');
-} */
+
+.card .share-btn-mobile {
+    display: none;
+}
 
 
 .card .share__links {
@@ -199,5 +206,10 @@ body {
         left: 0;
         right: 0;
         top: unset;
+    }
+
+    .card .share-btn-mobile {
+        display: grid;
+        margin-left: unset;
     }
 }
