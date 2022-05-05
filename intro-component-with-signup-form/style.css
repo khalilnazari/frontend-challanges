@@ -87,11 +87,20 @@ body {
     border-radius: 1rem;
 }
 
+/* input-group */
+.form-wrapper .input-group {
+    margin-bottom: 1rem;
+}
+
+.form-wrapper .display-error {
+    color: red;
+    font-size: 12px;
+}
+
 /* inputs */
 .form-wrapper .form-inputs {
     display: block;
     width: 100%;
-    margin-bottom:1rem;
     border: 1px solid var(--grayish-blue);
     padding: 10px 12px;
     border-radius: .3rem;

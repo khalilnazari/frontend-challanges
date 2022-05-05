@@ -22,11 +22,29 @@
         <p class="plan"><span class="plan-text">Try it free 7 days</span> then $20/mo. thereafter</p>
 
         <!-- form -->
-        <form action="">
-          <input type="text" class="form-inputs" name="first-name" id="first-name" placeholder="First Name">
-          <input type="text" class="form-inputs" name="last-name" id="last-name" placeholder="Last Name">
-          <input type="email" class="form-inputs" name="email" id="email" placeholder="Email address">
-          <input type="password" class="form-inputs" name="password" id="password" placeholder="Password">
+        <form action="" id="signup-form">
+          <div class="input-group">
+            <input type="text" class="form-inputs" name="first-name" id="first-name" placeholder="First Name" autocomplete>
+            <p class="display-error"></p>
+          
+          </div>
+
+
+          <div class="input-group">
+            <input type="text" class="form-inputs" name="last-name" id="last-name" placeholder="Last Name">
+            <p class="display-error"></p>
+          </div>
+
+
+          <div class="input-group">
+            <input type="text" class="form-inputs" name="email" id="email" placeholder="Email address" />
+            <p class="display-error"></p>
+          </div>
+
+          <div class="input-group">
+            <input type="password" class="form-inputs" name="password" id="password" placeholder="Password">
+            <p class="display-error"></p>
+          </div>
 
           <input type="submit" class="submit-btn" value="claim your free trail">
 
