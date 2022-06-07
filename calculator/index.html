@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title"></div>
+        <div class="results">
+            <p id="write-result">0</p>
+        </div>
+        <div class="input-buttons">
+            <div class="nums-buttons">
+                <button data-type="number" value="7">7</button>
+                <button data-type="number" value="8">8</button>
+                <button data-type="number" value="9">9</button>
+                <button data-type="del" id="del" value="del">DEL</button>
+            </div>
+            <div class="nums-buttons">
+                <button data-type="number" value="4">4</button>
+                <button data-type="number" value="5">5</button>
+                <button data-type="number" value="6">6</button>
+                <button data-type="operator" id="plus" value="+">+</button>
+            </div>
+            <div class="nums-buttons">
+                <button data-type="number" value="1">1</button>
+                <button data-type="number" value="2">2</button>
+                <button data-type="number" value="3">3</button>
+                <button data-type="operator" id="minus" value="-">-</button>
+            </div>
+            <div class="nums-buttons">
+                <button data-type="number" value=".">.</button>
+                <button data-type="number" value="0">0</button>
+                <button data-type="operator" id="division" value="/">/</button>
+                <button data-type="operator" id="multiply" value="x">x</button>
+            </div>
+            <div class="result-buttons">
+                <button data-type="reset" id="reset" value="reset">RESET</button>
+                <button data-type="operator" id="equal" value="equal">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
