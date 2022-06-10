@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!-- style -->
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Expenses chart component</title>
+</head>
+<body>
+
+  <!-- My balance
+  $921.48
+
+  
+
+  mon
+  tue
+  wed
+  thu
+  fri
+  sat
+  sun
+
+  Total this month
+  $478.33
+
+  +2.4%
+  from last month
+   -->
+
+   <main class="container">
+     <div class="cart">
+
+        <!-- header -->
+        <section class="card__header">
+          <div class="card__header-text">
+            My balance
+            $921.48
+          </div>
+          <div class="card__header-img">
+            <img src="./images/logo.svg" alt="">
+          </div>
+        </section>
+
+        <!-- body -->
+        <section class="card__body">
+          <h1 class="body__title">Spending - Last 7 days</h1>
+
+
+          <canvas id="myChart"></canvas>
+          <div class="cart__total">
+            <div>
+              <p>Total this month</p>
+              <p class="total">$ <span id="totalMonth"></span> </p>
+            </div>
+            <div>
+              <p><strong>+2.4%</strong></p>
+              <p>from last month</p>
+            </div>
+          </div>
+        </section>
+     </div>
+   </main>
+
+
+   <!-- chart.js script  -->
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+   <script>
+    const labels = [
+      'Mon',
+      'Tue',
+      'Wed',
+      'Thu',
+      'Fri',
+      'Sat',
+      'Sun',
+    ];
+
+    const dataArrray = [3, 4, 5, 6, 7, 2, 1]; 
+
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: 'Weekly expense',
+        backgroundColor: '#ec775f',
+        borderColor: '#ec775f',
+        data: dataArrray,
+      }]
+    };
+  
+    const config = {
+      type: 'bar',
+      data: data,
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      },
+    };
+
+
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+
+    const totalMonth = document.querySelector('#totalMonth'); 
+    totalMonth.textContent = dataArrray.reduce((n,m) => n+m)
+    
+  </script>
+</body>
+</html>
