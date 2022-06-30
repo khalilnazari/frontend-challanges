@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Product Card Example</title>
+</head>
+<body>
+    <div class="card">
+        <!-- card-header -->
+        <div class="card-header">
+            <img src="./images/t-shirt.jpg" alt="t-shirt image">
+        </div>
+
+        <!-- header-body -->
+        <div class="card-body">
+            <!-- card title -->
+            <div class="card-title-wrapper">
+                <h3 class="title">Strong T-shirt</h3>
+                <h4 class="price">$30.00</h4>
+            </div>
+
+            <p class="product-type">Men's casual T-shirt</p>
+
+            <!-- size -->
+            <div class="sizes">
+                <p class="sizes-title">Size</p>
+                <div class="sizes-container">
+                    <div>
+                        <label for="x-small" class="size-box">xs</label>
+                        <input type="radio" hidden name="size" id="x-small">
+                    </div>
+                    
+                    <div>
+                        <label for="small" class="size-box">s</label>
+                        <input type="radio" hidden name="size" id="small">
+                    </div>
+                    <div>
+                        <label for="medium" class="size-box selected">m</label>
+                        <input type="radio" hidden name="size" id="medium">
+                    </div>
+                    <div>
+                        <label for="large" class="size-box">l</label>
+                        <input type="radio" hidden name="size" id="large">
+                    </div>
+                    <div>
+                        <label for="x-large" class="size-box">xl</label>
+                        <input type="radio" hidden name="size" id="x-large">
+                    </div>
+                </div>
+            </div>
+
+            <!-- colors -->
+            <div class="colors">
+                <p class="colors-title">colors</p>
+                <div class="colors-container">
+                    <div class="color-input">
+                        <label for="gray-color" class="color-box gray"></label>
+                        <input type="radio" hidden id="gray-color" name="color">
+                    </div>
+                    <div class="color-input">
+                        <label for="black-color" class="color-box black selected"></label>
+                        <input type="radio" hidden id="black-color" name="color">
+                    </div>
+                    <div class="color-input">
+                        <label for="blue-color" class="color-box blue"></label>
+                        <input type="radio" hidden id="blue-color"  name="color">
+                    </div>
+                </div>
+            </div>
+
+            <!-- buttons -->
+            <div class="buttons">
+                <button class="btn btn-by-now">buy now</button>
+                <button class="btn btn-addto-card">add to cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
